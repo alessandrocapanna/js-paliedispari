@@ -8,7 +8,7 @@ function vedoPalindromicita(){
 var contrarioParola = vedoPalindromicita();
 var messaggio = 'la tua parola non è palindroma';
 if (contrarioParola == parola) {
-  messaggio = 'la tua prola è palindroma';
+  messaggio = 'la tua parola è palindroma';
 }
 console.log(messaggio);
 
@@ -16,6 +16,10 @@ console.log(messaggio);
 // Pari e Dispari
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 var pariDispari = prompt('digita pari o dispari');
+while (pariDispari != 'pari' && pariDispari != 'dispari') {
+
+  var pariDispari = prompt('inserisci pari o dispari');
+}
 
 var numero = parseInt(prompt('digita un numero da 1 a 5'));
 while (numero > 5) {
